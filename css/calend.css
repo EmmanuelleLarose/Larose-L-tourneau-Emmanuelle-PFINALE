@@ -1,0 +1,30 @@
+.mois
+{
+   
+    border: 1px solid black ;
+    .journéeSemaine
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nombre
+    {
+        display:grid;
+        justify-content: space-around;
+        grid-template-columns: 10px 10px 10px 10px 10px 10px 10px;
+
+    }
+    .Tmois
+    {
+        text-align: center;
+    }
+   
+}
+@media (min-width:700px){
+.Tous
+{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 10px;
+}
+}

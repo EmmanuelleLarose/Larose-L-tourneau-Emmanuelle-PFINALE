@@ -1,0 +1,39 @@
+
+:root { 
+    --duration: 0.75s; 
+    --detailsPadding: 25px; 
+    interpolate-size: allow-keywords; 
+} 
+summary { 
+    cursor: pointer; 
+  
+    &::marker { 
+        font-size: 1.0em; 
+    } 
+} 
+details { 
+    div { 
+        /* À compléter */ 
+        display: grid;
+        grid-template-columns: 50px 50px;
+    } 
+    span { 
+        /* À compléter */ 
+        text-decoration-color: blue;
+    color: blue;
+        font-family: monospace; 
+    } 
+    &::details-content { 
+        opacity: 0; 
+        block-size: 0; 
+        overflow-y: clip; 
+        transition: /* paramètres de l'animation */ 
+            content-visibility var(--duration) allow-discrete, 
+            opacity var(--duration), 
+            block-size var(--duration); 
+    } 
+    &[open]::details-content { 
+        opacity: 1; 
+        block-size: auto; 
+    } 
+} 
